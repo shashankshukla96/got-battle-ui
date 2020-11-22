@@ -1,0 +1,36 @@
+.topnav {
+    overflow: hidden;
+    background-color: #8d94e2;
+    width: 100vw;
+}
+
+.item {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    transition: 0.35s linear;
+}
+
+@media screen and (max-width: 800px) {
+    .item {
+        font-size: 24px;
+        line-height: 26px;
+        transition: 0.35s linear;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .item {
+        font-size: 18px;
+        line-height: 20px;
+        transition: 0;
+    }
+}
+
