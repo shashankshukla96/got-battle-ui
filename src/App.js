@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
-import { Route, BrowserRouter, Switch } from "react-router-dom";
 import Autocomplete from "react-autocomplete";
 import Battle from "./components/Battle";
 import Axios from "axios";
