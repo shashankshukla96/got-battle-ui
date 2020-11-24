@@ -54,14 +54,17 @@ function App() {
         const searchUrl = url + "/search?" + str.join("&");
         Axios.get(searchUrl)
             .then((data) => {
-                setBattles(data.data.data);
+                if (data.data.data.length > 0) setBattles(data.data.data);
+                else setErrMessage("No Battles found, for selected filters !");
             })
             .catch((err) => {
                 setErrMessage(err.message);
             });
     };
     return (
-        <>
+        <React.Fragment>
+            <p className='main-header'>Game of Thrones Battles</p>
+
             <div className='nav'>
                 <div className=' search search1'>
                     <Autocomplete
@@ -119,7 +122,7 @@ function App() {
                     Search
                 </button>
             </div>
-            {battles.length === 0 ? (
+            {battles.length === 0 && !errMessage ? (
                 <p
                     style={{
                         color: "black",
@@ -141,7 +144,7 @@ function App() {
                     return <Battle key={index} battle={battle} />;
                 })
             )}
-        </>
+        </React.Fragment>
     );
 }
 
