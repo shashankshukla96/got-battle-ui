@@ -40,14 +40,14 @@ function Battle(props) {
                             src='https://image.freepik.com/free-vector/ninja-esport-gaming-logo_96628-68.jpg'
                         />
                     </div>
-                    <div>{battle.attacker_size ? battle.attacker_size : 0}</div>
-                    <div>164</div>
-                    <div>89%</div>
+                    <div className="numbers">{battle.attacker_size ? battle.attacker_size : 0}</div>
+                    <div className="numbers">164</div>
+                    <div className="numbers">89%</div>
                 </div>
                 <div className='team'>
-				<div>{battle.defender_size ? battle.defender_size : 0}</div>
-                    <div>135</div>
-                    <div>86%</div>
+				<div className="numbers">{battle.defender_size ? battle.defender_size : 0}</div>
+                    <div className="numbers">135</div>
+                    <div className="numbers">86%</div>
                     <div className='logo'>
                         <img
                             alt='right-front'
