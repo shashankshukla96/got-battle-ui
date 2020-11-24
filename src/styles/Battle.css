@@ -1,5 +1,5 @@
 .container {
-    height: 94vh;
+    height: 85vh;
     background-color: rgb(92, 91, 91);
     /* border:1px solid red; */
     /* padding:10vh 10vw; */
@@ -141,7 +141,6 @@
         border-radius: 50%;
         width: 100px;
         height: 100px;
-
         opacity: 1;
     }
 
@@ -155,7 +154,9 @@
         width: 90vw;
         height: 40vh;
     }
-
+    .name {
+        font-size: 18px;
+    }
     .subname {
         color: white;
         font-weight: bold;
